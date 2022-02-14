@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO title tag section
+    The title tag in the head of an HTML page is an important factor for SEO ranking.
+    We should try to place the most important keywords into the title tag. The title 
+    should be about 55 to 60 characters long. Our goal is to keep it at about 40 chars 
+    regarding our mobile first approach. We try to place the CTA and the keywords at 
+    the start of the title. Goal is not to have our title concatenated with "..." in
+    search result snippets. On the other side, the title is important for the ranking 
+    on other search engines than Google, which allow title tags to be longer as 60
+    characters. If there is no suitable way to place the keywords into the 40 characters
+    at the beginning of the title tag, then we aim at placing it as early as possible
+    to make sure that the tag still makes any sense at all.
+
+    These are the SEO guidelines we try to keep up to when defining the title tag:
+
+    1. Keyword placement
+
+        We try to place the most important keywords that we want to be ranked high
+        with in the title tag. We try to place it as early as possible with regard 
+        to the fact that the tag still needs to make sense. The tag may not be abused
+        as a list of keywords, it must be our slogan and lead our customers to our
+        site. Keywords in title tags that the user has searched for will get boldened
+        by search engines, what has a positive effect on the user rendering a good 
+        CTR for us
+
+    2. Legibility
+
+        
+     -->
+    <title>Markus Eicher Home</title>
+
+    <!-- Default SEO meta tag section
+
+    See https://www.vioma.de/de/wiki/online-marketing/seo/meta-tags/ 
+    (in German) for more information
+
+    The following tag "description" is important for CTR but less important 
+    for SEO Ranking. Try to keep it at about 100 characters because this is 
+    the max amount of data that will be available on mobile viewports. 
+    SearchEngines are not always paying attention to this tag. They might 
+    decide to use other parts of the page to display in their search results.  --> 
+    
+    <meta name="description" content="OUR 100 CHARACTERS DESCRIPTION GOES HERE" />
+
+    <!-- The following tag "keywords" is mostly ignored today. Google does not 
+    display these keywords on its search results. The only advantage for our 
+    customers is, that they may find our site easier, if they search inside their 
+    bookmarks for these terms. -->
+    
+    <meta name="keywords" content="OUR KEYWORDS GO HERE" />
+
+    <!-- The following tag "robots" is used to lead crawlers, robots and search 
+    engines to behave as close to the way we want them to. It may only contain well 
+    known terms which may be separated by commas. We should keep in mind that using 
+    'content="noindex"' needs to be used with caution, because Google will treat sites
+    that use this entry likewise as if they have 'content="nofollow"'. This might cost 
+    us linkpower (linkjuice). Nonetheless we can use it on login-pages, the shopping
+    cart or pages with search results. Since about 2019 there are new directives available.
+    With 'content=max-snippet:[100]"' we can instruct the robots to display not more than 
+    the number of characters defined inside the brackets. This can help to have a consistent 
+    display of the description, but it also might have negative influence on it, if the 
+    search engine is using its own description instead of the one we defined with the 
+    description tag. We try to not use this, if not strictly necessary. The directive 
+    'content="max-video-preview:[30]"' instructs the search engine to reduce the length of 
+    video previews in the search results to the amount of seconds defined inside the brackets.
+    The last of the new directives we care about is 'content=max-image-preview:[standard]'. 
+    This lets us tell the search engine how to display images when they appear in search 
+    results. 'none' would instruct them to not display images at all and this is no option 
+    for us. With 'standard' we should be good, may be trying to use 'large' on wider 
+    viewports. -->
+    
+    <meta name="robots" content="OUR ROBOTS TAGS GO HERE" />
+
+
+
+    <!-- FACEBOOK OGP meta tag section
+
+    See https://www.vioma.de/de/wiki/online-marketing/seo/meta-tags/ 
+    (in German) for more information
+        
+    The next family of meta tags are the ones for social media sharing. We concentrate 
+    most on Facebook's Open Graph Protocol (OGP) meta tags and on the Twitter meta 
+    tags. The OG meta tags are pretty important, because they are used by some other 
+    big platforms like XING, LinkedIn and Reddit to display search results on their sites.
+    
+    The tag 'property="og:title" content="YOUR SITE CONTENT GOES HERE"' defines under 
+    which title our site is displayed in links shared on Facebook and other platforms 
+    using OGP. We try to keep this rather short but descriptive. -->
+
+    <meta property="og:title" content="OUR SITE TITLE GOES HERE" />
+
+    <!--The tag 'property="og:image" content="LINK TO YOUR PICTURE"' defines which 
+    preview picture is displayed. This is very relevant to us because it is the main 
+    point of attraction in a linked page on Facebook. The ratio of the picture should 
+    match the 1.91:1 aspect and have a resolution of at least 600x314px. We use a 
+    resolution of 1800x942px. -->
+
+    <meta property="og:image" content="LINK TO YOUR PICTURE GOES HERE" />
+
+    <!--The tag 'property="og:type" content="website"' defines the type of content that 
+    is displayed. For us the content type website is most relevant. There are other types 
+    that might be set. See https://ogp.me/#types for more information. -->
+
+    <meta property="og:type" content="website" /> 
+    
+    <!--The tag 'property="og:url" content="YOUR URL GOES HERE"' defines the exact URL 
+    that will be displayed and linked on Facebook. This should normally be the original
+    URL. Facebook is caching this URL, so it will have lesser impact on the traffic on 
+    our site. -->
+
+    <meta property="og:url" content="OUR URL GOES HERE" />
+
+    <!--The tag 'property="og:site_name" content="OUR BRANDNAME OR DOMAIN GOES HERE"' 
+    defines the tag that Facebook is displaying along with the Title and the description 
+    of the linked page. It is kind of the short name of the URL eg OURNAME.COM or 
+    OURBRANDNAME as a single entry. -->
+
+    <meta property="og:site_name" content="OURBRANDNAME GOES HERE" />
+
+    <!--The tag 'property="og:description" content="OUR SHORT DESCRIPTION GOES HERE"' defines 
+    the same as the meta tag "description" above but may be longer than the standard tag 
+    "description" because Facebook handles this by itself. We will always try to have this 
+    value consistent with the one we use as standard "description", but may alter it for marketing 
+    reasons to have a little more words to display our goals or content on social media links. -->
+
+    <meta property="og:description" content="OUR SHORT DESCRIPTION GOES HERE" />
+
+
+
+    <!-- TWITTER meta tag section
+
+    See https://www.vioma.de/de/wiki/online-marketing/seo/meta-tags/ 
+    (in German) for more information
+        
+    In this section we handle the way our linked pages are displayed in tweets and on Twitter. 
+    Twitter uses so called cards to display linked sites. -->
+    
+    <!-- The tag 'name="twitter:card" content="summary_large_image"' defines what content 
+    lies behind the link Twitter displays inside a tweet. For websites we use either "summary" 
+    or even better "summary_large_image". There are other content types like "app" for applications 
+    or "player" for videos that could be used appropriately. -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- The tag 'name="twitter:title" content="SEO optimized title description goes here"' defines 
+    what Twitter will show in BOLD letters as description inside of linked sites in a tweet. 
+    We try to be consistent with out main title tag in the header section of the page. Can be 
+    altered to have more reaction or as CTA. -->
+
+    <meta name="twitter:title" content="SEO optimized title description goes here" />
+
+    <!-- The tag 'name="twitter:description" content="SEO optimized site description goes here"' 
+    defines what Twitter will show in REGULAR letters as description inside of linked sites in 
+    a tweet. We try to be consistent with out main description tag in the header section of the 
+    page. Can be altered to have more reaction or as CTA. -->
+
+    <meta name="twitter:description" content="SEO optimized site description goes here" />
+
+    <!-- The tag 'name="twitter:image" content="LINK TO YOUR PICTURE GOES HERE"' sets the path 
+    to the image Twitter uses to display when linking to a site inside a tweet. Very important 
+    because it is the eyecatcher for the users. Should be between 144x144px minimal and 4096x4096px
+    maximal. Can not be bigger than 5MB and schould be at a ratio of 1.91:1. We use 1600x838 as 
+    our standard for these pictures. -->
+
+    <meta name="twitter:image" content="LINK TO YOUR PICTURE GOES HERE" />
+
+    <!-- The tag 'name="twitter:site" content="@OUR-TWITTER-ACCOUNT GOES HERE"' sets the path 
+    our Twitter profile. Used by Twitter to connect the linked site to our Twitter account. -->
+
+    <meta name="twitter:site" content="@OUR-TWITTER-ACCOUNT GOES HERE" /> 
+
+    <!-- The tag 'name="twitter:creator" content="@OUR-TWITTER-CREATOR-ACCOUNT GOES HERE"' sets 
+    the path the Twitter account that created the tweet. Used by Twitter to connect the linked 
+    site to the Twitter account of the person that created the tweet. -->
+
+    <meta name="twitter:site" content="@OUR-TWITTER-CREATOR-ACCOUNT GOES HERE" />
+
+
+</head>
+<body>
+    <p>Markus Eicher Home</p>
+    <h1>Links</h1>
+    <a href="projects.html" title="Markus Eicher's Projects">Projects</a>
+    <a href="aboutme.html" title="About Markus Eicher">About Me</a>
+    <a href="https://logbook.milohockey.online" target="_blank" title="Markus Eicher's Blog on Hashnode">Hashnode Blog</a>
+    <a href="https://github.com/MarkusEicher" target="github" title="Markus Eicher's Github Page">Github Page</a>   
+</body>
+</html>

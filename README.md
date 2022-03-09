@@ -1,4 +1,4 @@
-# educational-html-site-templates
+# codenewbies-html-template
 HTML templates with detailed description of tags and meta tags for beginners
 
 ## Hi there! 👋 Welcome to my project educational-html-site-templates
